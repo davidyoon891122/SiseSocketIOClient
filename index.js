@@ -12,4 +12,8 @@ socket.on("connect", (receive) => {
         console.log(`message from sise server : ${message}`)
     })
 
+    socket.on('sise', (data) => {
+        console.log(`sise: ${data}`)
+    } )
+
 })
